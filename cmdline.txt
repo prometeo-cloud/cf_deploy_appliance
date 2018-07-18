@@ -1,0 +1,1 @@
+ansible-playbook -i hosts/cfme playbook.yml -e vault_cfme_default_root_pw=${vault_cfme_default_root_pw} -e vault_cfme_new_root_pw=${vault_cfme_new_root_pw} -e vault_rhn_user=${vault_rhn_user} -e vault_rhn_pass=${vault_rhn_pass} -e vault_cfme_db_user=${vault_cfme_db_user} -e vault_cfme_db_pass=${vault_cfme_db_pass}

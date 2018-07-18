@@ -1,0 +1,13 @@
+[primary_db]
+<replace-with-db-hostname>	cfme_db_disk=<replace-with-db-disk>
+
+[appliances]
+<replace-with-appliance-hostname>	cfme_appliance_allinone=1
+
+[all:vars]
+cfme_primary_db_ip	=	<replace-with-db-ip>
+cfme_region		=	0
+
+[cfme:children]
+primary_db
+appliances

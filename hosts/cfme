@@ -1,0 +1,13 @@
+[primary_db]
+cfmemanoj.famili.local	cfme_db_disk=/dev/sdb
+
+[appliances]
+cfmemanoj.famili.local	join_external_region=1
+
+[all:vars]
+cfme_primary_db_ip	=	192.168.162.136
+cfme_region		=	0
+
+[cfme:children]
+primary_db
+appliances
